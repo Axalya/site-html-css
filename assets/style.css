@@ -1,0 +1,724 @@
+body{
+    background-color:#551A20;
+    font-family: 'Enchanted Land', cursive; color:blanchedalmond;
+    font-size: 15pt;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* feuille de style de l'image du menu */
+.header-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+.site-nav .menu {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+/* Pour que le menu hamburger pour téléphone ne s'affiche pas sur le du menu pour odri */
+.menu-icon,
+.menu-close {
+    display: none;
+}
+
+/* feuille de style du menu */
+.site-header {
+    background:#F8DDC3; 
+    padding: 10px 100px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    text-decoration: none;
+}
+.logo h1 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #551A20; 
+}
+
+/* Pour changer l'apparence au survol */
+.logo h1:hover {
+    color: #9733BD;/* Couleur change au survol */ 
+}
+
+.logo img {
+    width: 10vh; 
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu li {
+    margin-left: 30px;
+    transition: color 0.3s ease;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #551A20;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+
+/* Pour changer l'apparence au survol */
+.menu li a:hover {
+    color: #9733BD;/* Couleur change au survol */  
+}
+
+.search-form input[type="search"]:focus {
+    animation: shimmer 1s infinite;
+}
+
+
+/* feuille de style de l'accueil */
+
+  .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; 
+      align-items: center;
+      gap: 20px;
+  }
+  
+  .card {
+      width: 400px;
+      height: 700px;
+      margin: 40px;
+      background-color: #F8DDC3;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px;
+      display: flex;
+      flex-direction: column;
+      border: 2px solid; 
+      position: relative; 
+      animation: shimmer 2s infinite; 
+  }
+  
+.image-section img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card .image-section img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Animation pour l'effet hover au survol sur les images de l'accueil */
+.card:hover .image-section img {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.card:hover {
+    box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.35);
+    transition: box-shadow 0.3s ease;
+}
+
+.text-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.text-section h2, .text-section p {
+    margin-bottom: 15px;
+    color: #551A20;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #933CBE;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;body {
+    background-position : center center;
+    background-repeat : no-repeat;
+    font-family : 'Enchanted Land', cursive;
+    font-size : 15pt;
+    margin : 0;
+    padding : 0;
+    }
+    
+/* Animation pour l'effet 3D sur le bouton et les cartes */
+cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+    transform: translate(-0%, -5%);
+}
+
+/* Style et animation hover du bouton de l'accueil et de notre magistère */
+.button:hover {
+    border-radius: 50%;
+    background-color: #089908;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+}
+
+.button::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.4) 0%, transparent 70%);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.button:hover::before {
+    opacity: 1;
+}
+
+/* Animation pour l'effet machine à écrire de l'accueil */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: rgba(255, 131, 15, 0.007); }
+  }
+
+ /* Appliquez l'effet de machine à écrire au titre h2 de chaque carte */
+.card .text-section h2 {
+    display: inline-block; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    border-right: .15em solid; 
+    animation: typing 3.5s steps(30,end), blink-caret .20s step-end infinite; /* Applique l'animation machine à écricre avec le nombre total de caractères du texte */
+  }
+  
+
+
+/* feuille de style de la page formules magiques */
+  .cards-row {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+  }
+  
+  .container-card {
+      width: 300px;
+      margin: 20px;
+      box-shadow: 0 4px 8px;
+      border-radius: 10px;
+      overflow: hidden;
+      background:#F8DDC3;
+      color: #551A20;
+      font-family: 'Enchanted Land', cursive;
+      border: 2px solid #ffffff; /* Définit un contour initial */
+      position: relative; 
+      animation: shimmer 2s infinite; /* Applique l'animation scintillante */
+  }
+  
+  .imgBox {
+      width: 100%;
+      overflow: hidden;
+  }
+  
+  .imgBox img {
+      width: 100%;
+      height: auto;
+      display: block;
+  }
+  
+  .imgBox h2 {
+      font-size: 24px;
+      margin: 10px;
+  }
+  
+  .imgBox p {
+      font-size: 16px;
+      padding: 0 10px 20px;
+  }
+
+/* Animation pour l'effet scintillant */
+@keyframes shimmer {
+    0% {
+      border-color: #ffffff;
+      box-shadow: 0 0 15px #ffffff;
+    }
+    50% {
+      border-color: #ffd700;
+      box-shadow: 0 0 15px #ffd700;
+    }
+    100% {
+      border-color: #ffffff;
+      box-shadow: 0 0 15px #ffffff;
+    }
+  }
+  
+
+ /* Fiche de style pour le formulaire du portail de liaison */
+.form-container {
+    background-color: rgba(36, 34, 44, 0.9);
+    padding: 20px;
+    margin: 40px auto;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 8px rgba(0, 0, 0, 0.5); 
+    font-family: 'Merriweather', serif; /* Cette police a un style plus "littéraire" qui peut s'adapter au thème de la magie */
+    color: #e7e7de;
+}
+
+.form-container h2 {
+    color: #b843fc;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-container fieldset {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: #4b3869;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.form-container fieldset legend {
+    color: #ff9a00;
+    padding: 0 5px;
+    background-color: rgba(36, 34, 44, 0.9);
+    border-radius: 4px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"],
+.form-container input[type="tel"],
+.form-container input[type="date"],
+.form-container select {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #4b3869;
+    border-radius: 5px;
+    background-color: #262626;
+    color: #e7e7de;
+}
+
+.form-container input[type="radio"],
+.form-container input[type="checkbox"] {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.form-container label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;/* Cette propriété assure que le texte et la case à cocher sont alignés verticalement */
+    justify-content: flex-start; /* Adjusted to align items to the start (left) */
+}
+
+/*Style du bouton pour le formulaire du portail de liaison*/
+.form-container button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #7717af;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-container button[type="submit"]:hover {
+    background-color: #089908;
+}
+
+/* Style les bouton genre femme ou homme */
+.gender-selection {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.terms-and-submission a {
+    color: #f7931e;
+    text-decoration: none;
+}
+
+/* Pour changer l'apparence au survol */
+.terms-and-submission a:hover {
+    color: #b843fc; /* Couleur au survol */
+}
+
+.form-container input[type="checkbox"] {
+    margin-left: 0; /* Adjusted to remove auto margin */
+}
+
+input[type="checkbox"] {
+    display: inline-block;
+    margin-right: 10px; /* Keeps the checkbox close to the text */
+}
+
+label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    user-select: none;
+
+}
+
+ 
+
+
+/* Feuille de style pour le peid de page */
+footer {
+    background:#F8DDC3; 
+    color: #551A20; 
+    border-top: 1px dashed; 
+    font-family:'Roboto Slab', serif;
+    font-size: 15px;
+    padding-bottom: 1px;
+}
+
+.contenu-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start; 
+    padding: 10px;
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+
+.bloc {
+    margin: 10px;
+    flex: 1;
+    min-width: 200px; 
+}
+
+.bloc h3 {
+    margin-bottom: 15px; 
+}
+
+.credit-list,
+.schedule-list,
+.media-list {
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+}
+.footer-contact p {
+    display: flex;
+    align-items: center; /* Aligner les icônes avec le texte */
+    text-decoration: none; /* Enlève le soulignement des liens */
+    color: #551A20; /* Couleur des liens */
+}
+
+.credit-list li,
+.schedule-list li,
+.media-list li {
+    margin-bottom: 10px; /* Espacement entre les éléments de liste */
+}
+
+.credit-list li a {
+    display: flex;
+    align-items: center; /* Aligner les icônes avec le texte */
+    text-decoration: none; /* Enlève le soulignement des liens */
+    color: #551A20; /* Couleur des liens */
+}
+.schedule-list li a {
+    display: flex;
+    align-items: center; /* Aligner les icônes avec le texte */
+    text-decoration: none; /* Enlève le soulignement des liens */
+    color: #551A20; /* Couleur des liens */
+}
+
+.media-list li a {
+    display: flex;
+    align-items: center; /* Aligner les icônes avec le texte */
+    text-decoration: none; /* Enlève le soulignement des liens */
+    color: #551A20; /* Couleur des liens */
+}
+
+.media-list img {
+    margin-right: 10px; /* Espacement entre l'icône et le texte */
+    width: 24px; /* Largeur de l'icône */
+    height: auto; 
+}
+
+
+footer p {
+    color: #551A20; /* Définit la couleur du texte pour le paragraphe dans le footer */
+    text-align: center; /* Centrer le texte si nécessaire */
+    margin-top: 20px; /* Ajouter un espace au-dessus si nécessaire */
+    font-family: 'Roboto Slab', serif; /* Utiliser la même famille de polices que le reste du footer */
+    font-size: 15px; /* Assurer la cohérence de la taille de police avec le reste du footer */
+}
+
+
+
+/* Feuille de style pour la page mentions légales et politique de confidentialité */
+.main-content {
+    max-width: 800px; 
+    margin: 40px auto;
+    padding: 20px;
+    background: #F8DDC3;
+    border-radius: 10px; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+   
+}
+.mentions-legales h1 {
+    color: #2C3E50; 
+    margin-bottom: 0.5em; 
+    font-size: 2em;
+    text-align:  center;
+}
+.mentions-legales h2 {
+    color: #2C3E50; /* Couleur pour le titre des Mentions Légales */
+    margin-bottom: 0.5em; /* Espacement après le titre */
+}
+.mentions-legales {
+    color: #551A20; 
+}
+.mentions-legales p {
+    margin-bottom: 10px; /* Espacement entre les paragraphes */
+    line-height: 1.6; /* Hauteur de ligne pour améliorer la lisibilité */
+}
+
+.politique-confidentialite h1, .politique-confidentialite h2 {
+    color: #2C3E50; 
+}
+
+.politique-confidentialite h1 {
+    font-size: 2em; 
+    margin-bottom: 0.5em;
+    text-align:  center;
+}
+
+.politique-confidentialite h2 {
+    font-size: 1.5em; 
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+.politique-confidentialite p, .politique-confidentialite ul {
+    margin-bottom: 1em;
+    color: #551A20;
+}
+
+.politique-confidentialite ul {
+    padding-left: 20px; 
+}
+
+/* Media Queries pour les tablettes */
+@media (min-width: 601px) and (max-width: 1024px) {
+    /* Cache le bouton du menu hamburger et la croix de fermeture pour les tablettes */
+    .menu-icon,
+    .menu-close,input[type="checkbox" i] {
+        display: none;
+    }
+
+    /* Affiche le menu sans le menu hamburger */
+    .site-nav .menu {
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        padding: 0;
+    }
+
+    /* Styles supplémentaires pour ajuster l'apparence sur tablette */
+    .header-image img,
+    .image-section img,
+    .imgBox img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Menu de navigation*/
+    .site-nav .menu li {
+        margin-left: 10px; 
+        font-size: 1em; 
+    }
+
+    .logo h1 {
+        font-size: 1.2em; 
+    }
+    .logo img{
+      justify-content: left;
+    }
+    .menu li {
+        margin-left: 10px; 
+        font-size: 0.9em;
+    }
+    .search-form {
+        display: block; 
+    .main-content {
+        padding: 10px; 
+    }
+}
+
+
+
+/* Media Queries pour les téléphones */
+@media (max-width: 480px) {
+    .site-nav .menu {
+        flex-direction: column; 
+    }
+
+    .menu li {
+        margin: 5px 0; 
+    }
+    .logo img{
+        width: 50px;
+      }
+      .logo h1 {
+        font-size: 0.5em; 
+    }
+    .button {
+        font-size: 0.8em; 
+    }
+
+    .form-container {
+        align-items: center;
+        width: 84%;
+    }
+   
+
+    .cards-row ,
+    .container-card {
+       align-items: center;
+       flex-direction: column; 
+        
+    }
+
+    }
+    .form-container input,
+    .form-container button[type="submit"] {
+        width: 100%; 
+    }
+
+    .main-content {
+        align-items: center;
+        width: 84%;
+    }
+
+
+
+/* Media queries pour les appareils mobiles */
+@media (max-width: 768px) {
+    .contenu-footer {
+        flex-direction: row; 
+        flex-wrap: wrap; 
+        justify-content: space-between; 
+    }
+
+    .contenu-footer .bloc {
+        flex-basis: calc(33.333% - 20px); 
+        max-width: calc(33.333% - 20px); 
+    }
+}
+
+/* Media queries du pieds de page pour les très petits écrans */
+@media (max-width: 480px) {
+    .contenu-footer {
+        flex-direction: column; 
+    }
+
+    .contenu-footer .bloc {
+        flex-basis: 100%;
+        max-width: 100%; 
+        margin-bottom: 20px; 
+    }
+}
+
+
+
+/* Media Queries du menu en hamburger pour les appareils mobiles */
+@media (max-width: 868px) {
+    /* Style pour le bouton hamburger */
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 10px; 
+        left: 10px; 
+        color: #551A20;
+        font-size: 30px; /* Taille de l'icône du menu agrandie */
+        z-index: 100; 
+    }
+
+    /* Style pour la checkbox cachée */
+    .menu-toggle {
+        display: none;
+    }
+
+    /* Quand la checkbox est cochée, afficher le menu */
+    .menu-toggle:checked + .menu-icon + .site-nav .menu {
+        display: block;
+        position: absolute; /* Position absolue pour superposer sur le contenu */
+        left: 0;
+        top: 60px; 
+        width: 100%; /* Largeur à 100% pour s'étendre sur tout l'écran */
+        background-color: #F8DDC3; /* Fond pour le menu déroulant */
+        z-index: 99;
+    }
+
+    /* Style pour le menu déroulant */
+    .site-nav .menu {
+        display: none;
+        flex-direction: column;
+        align-items: center; /* Alignement des éléments de menu à gauche */
+        padding-left: 0; /* Aucun padding sur la gauche */
+        padding-top: 40px; /* Ajuste le padding pour la croix */
+    }
+
+    /* Style pour les éléments du menu */
+    .site-nav .menu li {
+        margin-bottom: 0.6em; 
+        width: 100%; 
+        text-align: center;
+    }
+
+    /* Style pour la croix de fermeture */
+    .menu-close {
+        display: none; 
+        font-size: 30px; 
+        position: absolute; 
+        top: 10px; 
+        right: 10px; 
+        cursor: pointer; 
+        z-index: 101; 
+        color: #551A20;
+    }
+
+    /* Affiche la croix seulement quand le menu hamburger est ouvert */
+    .menu-toggle:checked ~ .menu-close {
+        display: block;
+    }
+
+    /* Style pour la barre de recherche */
+    .search-form {
+        width: 100%; 
+        position: relative; 
+    }
+
+}
+}

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/images/Logo&Favicon/Favicon-elixir.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/images/Logo&Favicon/Favicon-elixir.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Contact</title>
+</head>
+<body>
+
+<!-- Fiche de style  -->
+    <style>
+
+/* image de fond de la page contact */
+    body {
+        background-image : url('assets/images/Image-accueil/fond-de-la-page-contact.jpg');
+        background-position : center;
+        background-repeat : no-repeat;
+        font-family : 'Enchanted Land', cursive;
+        font-size : 15pt;
+        margin : 0;
+        padding : 0;
+    }
+
+/* feuille de style du bouton de recherche */
+    .search-form input[type="search"] {
+        padding: 10px;
+        font-size: 16px;
+        border: 2px solid #593c8f;
+        background-color: #f0e6ff;
+        color: #5d5c61;
+        background-image: url('assets/images/icones/search.png');
+        background-position: 10px 5px;
+        background-repeat: no-repeat;
+        text-indent: 30px;
+        transition: border-color 0.3s ease-in-out; 
+    }
+    
+    .search-form input[type="search"]:focus {
+        outline: none;
+        background-color: #e8dfff;
+        animation: border-fade 1s infinite; 
+    }
+     </style>
+     
+  <!-- Menu de la page  -->
+
+  <header class="site-header">
+    <div class="header-content">
+        <a href="index.html" class="logo">
+          
+            <img src="assets/images/Logo&Favicon/Logo-potion.png" alt="Logo AlchimyPotion"> 
+            <h1>AlchimyPotion</h1>
+        </a>
+           <!-- Checkbox cachée qui va contrôler le menu hamburger -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+
+    <!-- Label qui sert de bouton pour le menu hamburger -->
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+    
+
+        <nav class="site-nav">
+            <ul class="menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="prestations.html">Potions</a></li>
+                <li><a href="apropos.html">Magistère</a></li>
+                <li><a href="contact.html">Portail</a></li>
+            </ul>
+        </nav>
+          <!-- Bouton pour fermer le menu (croix) -->
+     <label for="menu-toggle" class="menu-close">&#10005;</label>
+
+        <form class="search-form">
+            <input type="search" name="q" placeholder="Recherche">
+        </form>
+        </form>
+    </div>
+    
+</header>
+   
+     <!-- Image du menu de la page  -->
+    <div class="header-image">
+        <img src="assets/images/Images-en-tete-menu/portail-de-liaison.jpg"  class="img-fluid" alt="En-tête Image" />
+    </div>
+
+       <!-- Formulaire de la page Portail de Liaison  -->
+       <div class="form-container">
+        <form id="registration-form">
+            <h2>Contactez-nous</h2>
+            
+            <fieldset class="account-details">
+                <legend>Votre compte</legend>
+                <input type="email" placeholder="Email* " required>
+                <input type="email" placeholder="Confirmez l'email* " required>
+                <input type="password" placeholder="Mot de passe* " required>
+                <input type="password" placeholder="Confirmez le mot de passe*" required>
+            </fieldset>
+
+            <fieldset class="personal-details">
+                <legend>Vos données personnelles</legend>
+                <input type="text" placeholder="Nom* " required>
+                <input type="tel" placeholder="Téléphone* " required>
+                <input type="text" placeholder="Adresse">
+                <input type="text" placeholder="Ville*" required>
+                <input type="text" placeholder="Pays*" required>
+                
+               
+                <div class="gender-selection">
+                    <span>Genre*:</span>
+                    <input type="radio" id="homme" name="genre" value="homme" required>
+                    <label for="homme">Homme</label>
+                    <input type="radio" id="femme" name="genre" value="femme" required>
+                    <label for="femme">Femme</label>
+                </div>
+                <input type="date" required>
+                <select required>
+                    <option value="">Nationalité* </option>
+                    <option value="">Royaume Américain</option>
+                        <option value="">Royaume Britannique </option>
+                        <option value="">Royaume Français</option>
+                        <option value="">Royaume Canadien</option>
+                        <option value="">Royaume Australien</option>
+                        <option value="">Royaume Espagnol</option>
+                        <option value="">Royaume Japonais</option>
+                        <option value="">Royaume Chinois</option>
+                        <option value="">Royaume Indien</option>
+                        <option value="">Royaume Brésilien</option>
+                        <option value="">Royaume Russe</option>
+                </select>
+
+                <fieldset class="skills">
+                    <legend>Compétences Alchimiques</legend>
+                    
+                    <label for="potion-making">Maîtrise de la Potion :</label>
+                    <input type="range" id="potion-making" name="potion-making" min="0" max="100">
+                    </select>
+                </fieldset>
+                <label>
+                    <input type="checkbox"> Apprenti (êtes-vous encore un enfant sorcier ?)
+                </label>
+            </fieldset>
+            
+            <fieldset class="potion-interest">
+                <legend>Quelles potions vous intéressant ?</legend>
+                <label for="interested-potion">Choisissez une potion:</label>
+                <select id="interested-potion" name="interested-potion">
+                    <option value="">-- Sélectionnez une potion --</option>
+                    <option value="lumivision">Potion de Clarté - Lumivision</option>
+                    <option value="metamix">Élixir de Transformation - Métamix</option>
+                    <option value="sapiarome">Potion de Sagesse - Sapiarôme</option>
+                    <option value="vifargent">Potion d'Agilité - Vifargent</option>
+                    <option value="cupidessence">Élixir d'Amour - Cupidessence</option>
+                    <option value="somnibrume">Potion de Sommeil - Somnibrume</option>
+                    <option value="fortaroma">Élixir de Force - Fortaroma</option>
+                  
+                </select>
+            </fieldset>
+
+            <fieldset class="terms-and-submission">
+                <legend>Pacte magique</legend>
+                <label>
+                    <input type="checkbox" required> J'invoque et j'accepte la <a href="politique-de-confidentialite.html" target="_blank">politique de confidentialité</a> d'AlchimyPotion
+                </label> <br>
+                <label>
+                    <input type="checkbox"> Envoyez-moi vos meilleurs sorts et potions
+                </label> <br>
+    
+                <button type="submit">Envoyer</button>
+            </fieldset>
+            
+        </form>
+    </div>
+
+ 
+
+     <!-- Pied de page  -->
+<footer>
+    <div class="contenu-footer">
+    
+    <div class="bloc footer-credit">
+        <h3>Menu</h3>
+        <ul class="credit-list">
+            <li><a href="contact.html">Portail de Liaison</a></li>
+            <li><a href="mentions-legales.html">Mentions légales</a></li>
+            <li><a href="politique-de-confidentialite.html">Politique de confidentialité</a></li>
+            <li><a href="404.html">404</a></li>
+        </ul>
+    </div>
+    
+    
+    <div class="bloc footer-contact">
+        <h3>Nos coordonnées</h3>
+        
+        <p>+33 6 02 01 05 40</p>
+        <p>suuport-magicien@contact.com</p>
+        <p>123 Rue Imaginaire, 75000, Paris</p>
+        
+    </div>
+    
+    <div class="bloc footer-schedule">
+        <h3>Nos horaires d'ouvertures</h3>
+        <ul class="schedule-list">
+            <li>✔️ Lun-Ven : 9h-18h</li>
+            <li>❌ Sam-Dim : fermé</li>
+            
+        </ul>
+    </div>
+    
+    
+    <div class="bloc footer-medias">
+        <h3>Nos réseaux sociaux</h3>
+        <ul class="media-list">
+            <li><a href="https://www.facebook.com/profile.php?id=100009432556689"><img src="assets/images/icones/réseaux sociaux/facebook_794380.svg" alt="icones réseaux sociaux">Facebook</a></li>
+            <li><a href="https://www.instagram.com/axalya_ella/"><img src="assets/images/icones/réseaux sociaux/instagram_794384.svg" alt="icones réseaux sociaux" >Instagram</a></li>
+            <li><a href="https://www.linkedin.com/in/biella-serves-954ab9240/"><img src="assets/images/icones/réseaux sociaux/linkedin_794388.svg" alt="icones réseaux sociaux">Linkedin</a></li>
+        </ul>
+    </div>
+    </div>
+    <p>© 2024 AlchimyPotion. Tous droits réservés.</p>
+    </footer>
+    
+
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/images/Logo&Favicon/Favicon-elixir.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/images/Logo&Favicon/Favicon-elixir.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Notre Magistère</title>
+</head>
+<body>
+
+
+<!-- Fiche de style  -->
+    <style>
+/* feuille de style de la page notre Magistère */
+         .container {
+            width: 49%;
+            margin: 2em auto;
+            background: #F8DDC3;
+            padding: 1em;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #F8DDC3;
+            animation: shimmer 2s infinite alternate;
+        }
+
+        .story {
+            padding: 1em;
+            color: #551A20;
+        }
+
+        .magician-name {
+            font-size: 2em;
+            color: #551A20;
+            margin-bottom: 0.5em;
+            text-align: center;
+        }
+        .magician-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 1em;
+        }
+
+        .magician-name p {
+            font-size: 10px;
+            line-height: 1.5;
+            margin-bottom: 1em;
+        }
+
+/* feuille de style du bouton de recherche */
+        .search-form input[type="search"] {
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid #593c8f;
+            background-color: #f0e6ff;
+            color: #5d5c61;
+            background-image: url('assets/images/icones/search.png');
+            background-position: 10px 5px;
+            background-repeat: no-repeat;
+            text-indent: 30px;
+            transition: border-color 0.3s ease-in-out; 
+        }
+
+        .search-form input[type="search"]:focus {
+            outline: none;
+            background-color: #e8dfff;
+            animation: border-fade 1s infinite; 
+        }
+
+ /* Media Queries pour les téléphones */
+        @media (max-width: 480px) {
+        .site-nav .menu {
+            flex-direction: column; /* Les éléments du menu s'empilent verticalement */
+         }
+
+        .menu li {
+             margin: 5px 0; /* Ajustement des marges pour les éléments du menu */
+        }
+
+         .button {
+            font-size: 0.8em; /* Réduction de la taille de la police des boutons */
+         }
+
+        .form-container {
+            padding: 15px; /* Réduction du padding pour les formulaires */
+        }
+        
+        .container {
+            align-items: center;
+            width: 85%; /* Les cartes prennent toute la largeur disponible */       
+        }
+
+         }
+        .form-container input,
+        .form-container button[type="submit"] {
+            width: 100%; /* Les champs de formulaire prennent toute la largeur */
+        }
+
+    </style>
+
+ <!-- Menu de la page  -->
+
+ <header class="site-header">
+    <div class="header-content">
+        <a href="index.html" class="logo">
+          
+            <img src="assets/images/Logo&Favicon/Logo-potion.png" alt="Logo AlchimyPotion"> 
+            <h1>AlchimyPotion</h1>
+        </a>
+           <!-- Checkbox cachée qui va contrôler le menu hamburger -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+
+    <!-- Label qui sert de bouton pour le menu hamburger -->
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+    
+
+        <nav class="site-nav">
+            <ul class="menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="prestations.html">Potions</a></li>
+                <li><a href="apropos.html">Magistère</a></li>
+                <li><a href="contact.html">Portail</a></li>
+            </ul>
+        </nav>
+          <!-- Bouton pour fermer le menu (croix) -->
+     <label for="menu-toggle" class="menu-close">&#10005;</label>
+
+        <form class="search-form">
+            <input type="search" name="q" placeholder="Recherche">
+        </form>
+        </form>
+    </div>
+    
+</header>
+
+     <!-- Image du menu de la page  -->
+    <div class="header-image">
+        <img src="assets/images/Images-en-tete-menu/notre-magistere.jpg"  class="img-fluid" alt="En-tête Image" />
+    </div>
+
+     <!-- Corps de la page Notre Magistère  -->
+    <div class="stories-container">
+        <div class="container story-container">
+            <section class="story">
+                <h2 class="magician-name">Légende du Maître Aldaric</h2>
+                <img src="assets/images/Image-accueil/maitre-aldaric.jpg" alt="Maitre Aldaric" class="magician-image">
+    
+                <p>Au cœur d'une forêt ancestrale, dissimulé par des brumes envoûtantes et un voile de mystère, se trouve AlchimyPotion, un laboratoire magique renommé pour ses concoctions aux pouvoirs inégalés. Fondé il y a des siècles par le grand maître alchimiste Aldaric, ce sanctuaire de la sorcellerie a toujours été à la pointe de l'innovation magique.</p>
+                <p>AlchimyPotion n'était à l'origine qu'une modeste chaumière où Aldaric, un jeune homme à la curiosité insatiable, mélangeait des herbes et des essences rares, cherchant à percer les secrets de l'univers. Sa détermination et ses découvertes le menèrent à créer la première Potion d'Éveil, une boisson luminescente capable d'ouvrir les esprits aux fils invisibles de la magie.</p>
+                <p>Le bruit de ses talents se répandit comme une traînée de poudre magique à travers les royaumes, attirant des apprentis désireux d'apprendre et des maîtres souhaitant partager leur sagesse. Ensemble, ils transformèrent la simple demeure d'Aldaric en un bastion de connaissance et d'expérimentation. </p>
+                <a href="prestations.html" class="button">Explorez</a>
+            </section>
+        </div>
+    
+
+         <!-- Pied de page  -->
+        <footer>
+            <div class="contenu-footer">
+            
+            <div class="bloc footer-credit">
+                <h3>Menu</h3>
+                <ul class="credit-list">
+                    <li><a href="contact.html">Portail de Liaison</a></li>
+                    <li><a href="mentions-legales.html">Mentions légales</a></li>
+                    <li><a href="politique-de-confidentialite.html">Politique de confidentialité</a></li>
+                    <li><a href="404.html">404</a></li>
+                </ul>
+            </div>
+            
+            
+            <div class="bloc footer-contact">
+                <h3>Nos coordonnées</h3>
+                
+                <p>0+33 6 02 01 05 40</p>
+                <p>suuport-magicien@contact.com</p>
+                <p>123 Rue Imaginaire, 75000, Paris</p>
+                
+            </div>
+            
+            <div class="bloc footer-schedule">
+                <h3>Nos horaires d'ouvertures</h3>
+                <ul class="schedule-list">
+                    <li>✔️ Lun-Ven : 9h-18h</li>
+                    <li>❌ Sam-Dim : fermé</li>
+                    
+                </ul>
+            </div>
+            
+            
+            <div class="bloc footer-medias">
+                <h3>Nos réseaux sociaux</h3>
+                <ul class="media-list">
+                    <li><a href="https://www.facebook.com/profile.php?id=100009432556689"><img src="assets/images/icones/réseaux sociaux/facebook_794380.svg" alt="icones réseaux sociaux">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/axalya_ella/"><img src="assets/images/icones/réseaux sociaux/instagram_794384.svg" alt="icones réseaux sociaux" >Instagram</a></li>
+                    <li><a href="https://www.linkedin.com/in/biella-serves-954ab9240/"><img src="assets/images/icones/réseaux sociaux/linkedin_794388.svg" alt="icones réseaux sociaux">Linkedin</a></li>
+                </ul>
+            </div>
+            </div>
+            <p>© 2024 AlchimyPotion. Tous droits réservés.</p>
+            </footer>
+            
+        
+</body>
+</html>
